@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong | Steve Onyeneke</title>
+</head>
+<body>
+<header> 
+        <div class="container">
+            <div id="branding">
+                <h1><i class="fas fa-chart-line"></i><a href="/"><span class="highlight"> ARMSTRONG</span><span style="color:goldenrod">Checker</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="/index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase"> 
+        <div class="container">
+            <h1>Armstrong Checker</h1>
+            <p><span style="color: goldenrod">Confirms</span> whether a 3-digit integer is an ARMSTRONG number or not. See <a href="#about">About</a> for more info</p>
+                
+            <label for="input">Please input a 3-digit integer to be checked</label>
+            <input type="number" id="input" placeholder=000 value=0 oninput="checkArmstrong()">
+
+            <div>
+                <button type="submit" class="checkClass" id="checkID" onclick="checkArmstrong()">Run Check</button></td>
+            </div>
+            <p id="checkResult"></p>
+        </div>
+    </section>
+</body>
+</html>
