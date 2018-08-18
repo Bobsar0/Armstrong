@@ -5,7 +5,7 @@ function armstrong(){
     if (inputStr.length != 3){
         alert("Sorry, input should be of 3 digits")
     }
-    let result = check(inputStr);
+    let result = checkValue(inputStr);
     if (result){
         document.getElementById("checkResult").innerHTML = `<span style="color: green">Yay!!!</span> ${input} is an Armstrong number!`
     }else{
@@ -13,8 +13,18 @@ function armstrong(){
     }
 }
 
-//check() performs actual calculations to verify the armstrong-ness of the input and outputs result to the user
-function check(val){
+function checkInput(){
+    let input = document.getElementById("input").value.toString();
+    if (input.length !== 3){
+        document.getElementById("checkBtn").style.cursor = "not-allowed";
+        return
+    }else{
+        document.getElementById("checkBtn").style.cursor = "pointer";
+    }
+}
+
+//checkValue() performs actual calculations to verify the armstrong-ness of the input and outputs result to the user
+function checkValue(val){
     let output = 0;
     for(char of val){
         output += Math.pow(Number(char), 3);
