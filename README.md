@@ -1,5 +1,5 @@
 # Armstrong
-A 3-digit armstrong checker app
+A 3-digit armstrong checker app. See codepen: https://codepen.io/bobsar0/pen/vzBEEa
 
 ## TDD STEPS - Features to implement
 
