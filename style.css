@@ -1,76 +1,119 @@
-body{
-    width: 100%;
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
-    background-color: black;
-  }
-  
-  .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    overflow: hidden;
-    border: #32a0c2 3px solid;
-    box-shadow: 5px 8px #353637;
-    background-color: lightslategrey;
-  }
-  
-  #showcase {
-    text-align: center;
-    color: #fcfcfc;
-  }
-  
-  #showcase label{
-    padding-right: 5px; 
-    font-size: 18px;
-    text-shadow: 2px 2px 4px #000000;
-  }
-  #showcase h1{
-    margin-top: 70px;
-    font-size: 50px;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px #000000;
-    color: goldenrod;
-  }
-  #showcase p{
-    font-size: 20px;
-    text-shadow: 2px 2px 4px #000000
-  }
-  
-  #input{
-    height: 28px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: none;
-    text-align: right;
-    margin-left: -4px;
-    margin-top: 10px;
-    font-weight: 530;
-  }
+body {
+  width: 100%;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  background-color: black;
+}
 
-  /****Run Check BUTTON*****/
-  #checkBtn{
-    margin-top: 5%;
-    background-color: rgba(0, 0, 0, 0.589) ;
-    color: goldenrod;
-    font-size: 20px;
-    padding: 20px 50px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-top: 1px;
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: hidden;
+  border: #32a0c2 3px solid;
+  box-shadow: 5px 8px #353637;
+  background-color: lightslategrey;
+}
+
+#showcase {
+  text-align: center;
+  color: #fcfcfc;
+}
+
+#showcase label {
+  padding-right: 5px;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px #000000;
+}
+#showcase h1 {
+  margin-top: 70px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000000;
+  color: goldenrod;
+}
+#showcase p {
+  font-size: 20px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#input {
+  height: 28px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  text-align: right;
+  margin-left: -4px;
+  margin-top: 10px;
+  font-weight: 530;
+}
+
+/****Run Check BUTTON*****/
+#checkBtn {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: goldenrod;
+}
+#checkBtn:hover {
+  font-weight: bolder;
+  color: lightslategray;
+  background-color: green;
+}
+
+/*****MODAL*****/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+/* Modal Content/Box */
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 80%;
+  border-radius: 0.5rem;
+  border: 1px solid #888;
+  background-color: #fefefe;
+}
+
+#info:hover {
+  cursor: pointer;
+  font: 100;
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+/********RESPONSIVENESS********/
+@media (max-width: 700px) {
+  #showcase h1 {
+    margin-top: 40px;
+    font-size: 38px;
   }
-  #checkBtn:hover{
-    color: #32a0c2;
-    background-color: green;
-    font-weight: bolder;
-  }
-  
-    
-  /********RESPONSIVENESS********/
-  @media(max-width: 750px) { /* Valid for screen sizes with max width of 750 pixel*/
-    #showcase h1{
-      margin-top: 40px;
-      font-size: 40px;
-    }
-  }
+}
