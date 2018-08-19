@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armstrong | Steve Onyeneke</title>
     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <section id="showcase"> 
-        <div class="container">
-            <h1>Armstrong Checker</h1>
-            <p><span style="color: goldenrod">Confirms</span> whether a 3-digit integer is an ARMSTRONG number or not. See <a href="#about">About</a> for more info</p>
-                
-            <label for="input">Please input a 3-digit integer to be checked</label>
-            <input type="number" id="input" placeholder="000">
+  </head>
+  <body>
+    <section id="showcase"> <!--showcases main app-->
+      <div class="container">
+        <h1>3-Digit ARMSTRONG Checker</h1>
+        <p><span style="color: greenyellow;">Instantly</span> verifies if a 3-digit integer is an ARMSTRONG number.<br> 
+          <span style="font-size:15px"><i>See <span id ="info" style="color: goldenrod; text-decoration: underline">MORE INFO</span> for details about an armstrong number</i></span></p>
 
-            <div>
-                <button type="submit" class="checkBtnClass" id="checkBtn" onmouseover="checkInput()" onclick="armstrong()">Run Check</button>            </div>
-            <p id="checkResult"></p>
-        </div>
+        <label for="input">Please input your 3-digit integer here:</label>  
+        <input type="number" id="input" placeholder="000">
+      <div>
+        <p id="checkResult"></p>
+      </div>
+        <div>
+          <button type="submit" class="checkBtnClass" id="checkBtn" onmouseover="checkInput()" onclick="armstrong()">Run Check</button>
+      </div>
+      </div>
     </section>
-</body>
+  </body>
 <script src="./armstrong.js"></script>
 </html>

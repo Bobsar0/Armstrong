@@ -1,32 +1,41 @@
 body{
     width: 100%;
     font: 15px/1.5 Arial, Helvetica, sans-serif;
+    background-color: black;
   }
   
   .container{
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
     overflow: hidden;
     border: #32a0c2 3px solid;
+    box-shadow: 5px 8px #353637;
+    background-color: lightslategrey;
   }
   
   #showcase {
     text-align: center;
-    color: black;
+    color: #fcfcfc;
   }
   
   #showcase label{
     padding-right: 5px; 
     font-size: 18px;
+    text-shadow: 2px 2px 4px #000000;
   }
   #showcase h1{
     margin-top: 70px;
     font-size: 50px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
     color: goldenrod;
   }
   #showcase p{
     font-size: 20px;
+    text-shadow: 2px 2px 4px #000000
   }
   
   #input{
@@ -57,3 +66,11 @@ body{
     font-weight: bolder;
   }
   
+    
+  /********RESPONSIVENESS********/
+  @media(max-width: 750px) { /* Valid for screen sizes with max width of 750 pixel*/
+    #showcase h1{
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
