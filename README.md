@@ -7,7 +7,7 @@ A 3-digit Armstrong number is a 3-digit integer whose sum of the cubes of its di
 ## TDD STEPS - Features to implement
 
 ### FUNCTIONALITY
-- [x] Take in number to be checked                                             
+- [x] Should take in number to be checked                                             
 - [x] Should determine that the number is a 3 digit integer                     - - [x] Should run check and display the result                                  
 - [x] Should alert user as to why a deactivated button shouldn't be clicked    
 
