@@ -3,7 +3,6 @@ A 3-digit armstrong checker app. See codepen: https://codepen.io/bobsar0/pen/vzB
 
 ## DESCRIPTION
 A 3-digit Armstrong number is a 3-digit integer whose sum of the cubes of its digits is equal to the number. For eg: 371 is an Armstrong number as 3^3 + 7^3 + 1^3 = 371. The app takes in a number to be checked, determines that the number is a 3 digit integer, performs some computations on the number to ascertain its 'armstrong-ness' and displays the result.
-=======
 
 ## TDD STEPS - Features to implement
 
