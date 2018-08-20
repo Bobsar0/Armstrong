@@ -1,19 +1,3 @@
-/********** TDD STEPS - Features to implement ***********/
-//FUNCTIONALITY
-//1. Should take in number to be checked
-//2. Should determine that the number is a 3 digit integer
-//3. Should run check and display the result
-//4. Should alert user as to why a deactivated button shouldn't be clicked
-
-//DOM MANIPULATION
-//1. Should inject initial HTML
-//2. Should display an input field
-//3. Should display a "run check" button
-//4. Should deactivate "run check" button on invalid input
-//5  Should display massege if deactivated "run check" button is clicked
-//6. Should display result on a div
-/***************************************************/
-
 const btn = document.getElementById("checkBtn");
 const display = document.getElementById("checkResult");
 const inputBox = document.getElementById("input");
@@ -49,23 +33,19 @@ function checkValue(val) {
   }
 }
 
-//Styles the Run Check btn based on user input
-btn.onmouseover = () => {
+//Styles the RunCheck btn and resets div display based on user input.
+inputBox.oninput = () => {
+  display.innerHTML = ""; //reset div display
   const input = inputBox.value;
-  if (input.length !== 3) {
+  if (input.length === 0) {
     btn.style.cursor = "not-allowed";
-    btn.style.opacity = 0.3;
-    btn.style.backgroundColor = "red";
-  } else {
-    btn.style.cursor = "pointer";
-    btn.style.opacity = 1;
-    btn.style.backgroundColor = "green";
+    btn.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+    btn.style.opacity = 0.5;
+    return;
   }
-};
-
-//Resets div display
-inputBox.onclick = () => {
-  display.innerHTML = "";
+  btn.style.cursor = input.length === 3 ? "pointer" : "not-allowed";
+  btn.style.backgroundColor = input.length === 3 ? "green" : "red";
+  btn.style.opacity = input.length === 3 ? 1 : 0.3;
 };
 
 //***********MODAL**********/
